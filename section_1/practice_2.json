@@ -1,0 +1,28 @@
+{
+    "name": "构造函数",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "函数也是一种对象,从内部结构来看,它继承于Function对象.",
+    "desc_file": true,
+    "step_desc_file": true,
+    "tips_file": true,
+    "answer_file": true,
+
+    "project_dir": "/javascript_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "challenge_1_2.js",
+            "path": "/javascript_template/"
+        }
+    ],
+    "spec": {
+        "type":"terminal",
+        "src":"browser",
+        "name": "challenge.html",
+        "path": "/javascript_template/",
+        "run_files": ["../javascript_template/challenge_1_2", "../specs/section_0/challenge_1_2"]
+    },
+    "order": 1
+}

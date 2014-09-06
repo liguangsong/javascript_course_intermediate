@@ -1,0 +1,15 @@
+{
+    "title": "变量的引用",
+    "type": "topic",
+    "order": 1,
+    "desc_file": true,
+    "code": "var num1 = 3, num2 = 7;\nnum1 = num2;\nnum2 = num1;\nconsole.log( \"num1 = \" + num1 + \"; num2 = \" + num2 +\";\" );",
+    "question": {
+        "content": "请问,上面代码的输出结果是?",
+        "options": ["num1 = 7; num2 = 3;","num1 = 3; num2 = 7;","num1 = 3; num2 = 3;","num1 = 7; num2 = 7;"]
+    },
+    "answer": {
+        "value": "num1 = 7; num2 = 7;",
+        "explain_file": true
+    }
+}

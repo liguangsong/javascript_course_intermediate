@@ -1,0 +1,28 @@
+{
+    "name": "参数变量",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "函数内部被传入的参数,其作用域的范围仅限于该函数,相当于一个局部变量.",
+    "desc_file": true,
+    "step_desc_file": true,
+    "tips_file": true,
+    "answer_file": true,
+
+    "project_dir": "/javascript_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "challenge_0_2.js",
+            "path": "/javascript_template/"
+        }
+    ],
+    "spec": {
+        "type":"terminal",
+        "src":"browser",
+        "name": "challenge.html",
+        "path": "/javascript_template/",
+        "run_files": ["../javascript_template/challenge_0_2", "../specs/section_0/challenge_0_2"]
+    },
+    "order": 1
+}

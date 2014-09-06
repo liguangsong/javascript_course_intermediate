@@ -1,0 +1,19 @@
+{
+    "title": "变量值与实际值",
+    "type": "topic",
+    "order": 2,
+    "desc_file": true,
+    "code": "var num1 = 3, num2 = 7, num3;\nnum3 = num1;\nnum1 = num2;\nnum2 = num3;\nconsole.log( \"num1 = \" + num1 + \"; num2 = \" + num2 +\";\" );",
+    "question": {
+        "content": "请问,上面代码的输出结果是?",
+        "options": ["num1 = 7; num2 = 3;","num1 = 3; num2 = 7;","num1 = undefined; num2 = 3;","num1 = undefined; num2 = undefined;"]
+    },
+    "answer": {
+        "value": "num1 = 7; num2 = 3;",
+        "explain_file": true
+    }
+}
+
+
+
+

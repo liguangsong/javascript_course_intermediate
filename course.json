@@ -1,0 +1,23 @@
+{
+    "basic": {
+        "show_name": "new Javascript 中级",
+        "id_name":"new_js_intermediate",
+        "desc": "这一部分将讲解JavaScript更高一级别的的核心概念.如果说基础课程是在介绍JavaScript基本的语法规则,那中级课程则偏重于介绍该编程语言的编程理念和编码风格.",
+        "target_effect": {
+            "name": "JS Console",
+            "desc": "JS Console是一个类似于网页JS控制台'console'的页面应用,是本站用来助力JS教学练习的一个助手工具,你可以在里面毫无顾虑的操练JS代码,而没有后顾之忧.",
+            "href": "/super_show/js_console.html"
+        },
+        "order": 4,
+        "ico": "/images/JS.PNG",
+        "title_ico": "/images/Javascript.png",
+        "version": "2.0.0"
+    },
+    "relevance":{
+        "type":"path",
+        "column":"_id",
+        "index":{
+            "id_name":"javascript"
+        }
+    }
+}

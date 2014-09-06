@@ -1,0 +1,15 @@
+{
+    "title": "函数的使用方法总结",
+    "type": "topic",
+    "order": 1,
+    "desc_file": true,
+    "code": "var player = {\n                       code : 2,\n                      name : 'Tom',\n                     status : 'active',\n                      score : [\n                                    7,\n                                    5,\n                                    9,\n                                    7\n                                  ],\n            get_average:function(){\n                                    var score = this.score;\n                                    //注:this代指player对象本身(可以认为this的实际值就是player对象,具体用法将在下一节内容介绍)\n                                    var length = score.length;\n                                    var totle = 0;\n                                    for(var i=0;i<length;i++){\n                                        totle += score[i];\n                                    }\n                                    return totle/length;\n                              }\n                     }\nconsole.log( player.get_average() );",
+    "question": {
+        "content": "上面代码的在上一小节内容的基础上添加了一个方法 get_average, 请分析上面的代码, 选出上述代码中方法调用的结果是谁?",
+        "options": [28,7,4,0]
+    },
+    "answer": {
+        "value": 7,
+        "explain_file": true
+    }
+}

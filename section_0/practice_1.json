@@ -1,0 +1,28 @@
+{
+    "name": "变量作用域",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "函数的嵌套声明方式,能够让我们在函数内部访问到外层函数的作用域.",
+    "desc_file": true,
+    "step_desc_file": true,
+    "tips_file": true,
+    "answer_file": true,
+
+    "project_dir": "/javascript_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "challenge_0_1.js",
+            "path": "/javascript_template/"
+        }
+    ],
+    "spec": {
+        "type":"terminal",
+        "src":"browser",
+        "name": "challenge.html",
+        "path": "/javascript_template/",
+        "run_files": ["../javascript_template/challenge_0_1", "../specs/section_0/challenge_0_1"]
+    },
+    "order": 0
+}

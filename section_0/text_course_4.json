@@ -1,0 +1,15 @@
+{
+    "title": "顺序执行",
+    "type": "topic",
+    "order": 3,
+    "desc_file": true,
+    "code": "var num1 = 5;\nvar num2 = 3;\nconsole.log(num1);\nconsole.log(num2);\nnum1 = num2;\nnum2 = num1;\nconsole.log(num1+num2);",
+    "question": {
+        "content": "请问,上面代码的输出结果是?",
+        "options": ["5  3  8","5  3  10","5  3  6","5  3  2"]
+    },
+    "answer": {
+        "value": "5  3  6",
+        "explain_file": true
+    }
+}

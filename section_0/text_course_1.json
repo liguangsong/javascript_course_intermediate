@@ -1,0 +1,15 @@
+{
+    "title": "变量的定义(声明)和赋值",
+    "type": "topic",
+    "order": 0,
+    "desc_file": true,
+    "code": "var time;\nconsole.log( typeof(time) );",
+    "question": {
+        "content": "的结果是?",
+        "options": ["undefined","null","string","number"]
+    },
+    "answer": {
+        "value": "undefined",
+        "explain_file": true
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "title": "如何生成对象",
+    "type": "topic",
+    "order": 0,
+    "desc_file": true,
+    "code": "var player = {\n                       code : 2,\n                      name : 'Tom',\n                     status : 'active',\n                      score : [\n                                    7,\n                                    5,\n                                    9,\n                                    5\n                                  ]\n                   }",
+    "question": {
+        "content": "上面的代码以字面量表达式的方式定义了一个对象player, 那么请问下列哪种方式不能将对象player中score属性的数组内容改为 [7,5,9,7] 呢?",
+        "options": ["player.score[3] = 7","player.score = [7,5,9,7]", "player.score[3] = player.score[0]","player.score[4] = 7"]
+    },
+    "answer": {
+        "value": "player.score[4] = 7",
+        "explain_file": true
+    }
+}

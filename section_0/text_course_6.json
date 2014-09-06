@@ -1,0 +1,15 @@
+{
+    "title": "返回值",
+    "type": "topic",
+    "order": 5,
+    "desc_file": true,
+    "code": "var num1 = 3;\nvar num2 = 5;\nfunction compare(a, b){\n    return a>b ? \"bigger\" : \"not less\";\n}\nresult = compare(num1,num2);\nconsole.log( num1 + \" is \" + result + \" than \" + num2 );",
+    "question": {
+        "content": "请问,上面代码的输出结果是?",
+        "options": ["5 is not less than 3","3 is bigger than 5","5 is bigger than 3","3 is not less than 5"]
+    },
+    "answer": {
+        "value": "3 is not less than 5",
+        "explain_file": true
+    }
+}
