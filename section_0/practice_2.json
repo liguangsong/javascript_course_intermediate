@@ -14,14 +14,14 @@
     "files": [
         {
             "name": "challenge_0_2.js",
-            "path": "/javascript_template/"
+            "path": "/javascript_template"
         }
     ],
     "spec": {
         "type":"terminal",
         "src":"browser",
         "name": "challenge.html",
-        "path": "/javascript_template/",
+        "path": "/javascript_template",
         "run_files": ["../javascript_template/challenge_0_2", "../specs/section_0/challenge_0_2"]
     },
     "order": 1
