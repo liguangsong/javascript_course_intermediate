@@ -11,8 +11,8 @@ function runner(load_files) {
             }
         }
     });
-
-    require(['jasmine', 'boot', 'reporter', 'spec_helper'], function () {
+//, 'spec_helper'
+    require(['jasmine', 'boot', 'reporter'], function () {
         require(load_files, function () {
             jasmine.getEnv().execute();
         });
