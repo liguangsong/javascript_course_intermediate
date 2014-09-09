@@ -17,7 +17,7 @@
             "path": "/javascript_template"
         }
     ],
-    "spec": {
+    "runner": {
         "type":"terminal",
         "src":"browser",
         "name": "challenge.html",
