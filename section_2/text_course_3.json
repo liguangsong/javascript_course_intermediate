@@ -1,15 +1,15 @@
 {
-    "title": "一.this引用的指向",
+    "title": "三.函数的apply与call方法",
     "type": "topic",
-    "order": 0,
+    "order": 2,
     "desc_file": true,
     "code": "demo",
     "question": {
         "content": "demo?",
-        "options": ["demo1","demo2", "demo3","demo4"]
+        "options": ["demo1","demo2","demo3","demo4"]
     },
     "answer": {
-        "value": "dmeo3",
+        "value": 7,
         "explain_file": true
     }
 }
