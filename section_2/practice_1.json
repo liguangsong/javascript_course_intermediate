@@ -1,9 +1,9 @@
 {
-    "name": "dmeo1",
+    "name": "this引用",
     "type": "normal",
     "point": 200,
 
-    "simple_desc": "demo",
+    "simple_desc": "this引用是Javascript语言体系中灵活而又强大的一中特性,本节练习是this引用的实际编码训练.",
     "desc_file": true,
     "step_desc_file": true,
     "tips_file": true,
