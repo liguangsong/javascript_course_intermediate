@@ -4,4 +4,3 @@
     display.call({name:"bower"}, ["I'm a","robot"])
 
     display.apply({name:"bower"}, [["I'm a","robot"]])	//在apply方法中,实际参数["I'm a","robot"]应该被放在数组中.
-    

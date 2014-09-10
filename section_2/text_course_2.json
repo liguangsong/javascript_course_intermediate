@@ -3,7 +3,7 @@
     "type": "topic",
     "order": 1,
     "desc_file": true,
-    "code": "var robot_1 = {\n	name : \"bower\",\n	say : function(){\n			console.log(this.name);\n		}\n}\nvar robot_2 = {\n	name : \"cup\"\n}\nrobot_2.say = robot_1.say;\nrobot_2.say()",
+    "code": "var robot_1 = {\n    name : \"bower\",\n    say : function(){\n            console.log(this.name);\n        }\n}\nvar robot_2 = {\n name : \"cup\"\n}\nrobot_2.say = robot_1.say;\nrobot_2.say()",
     "question": {
         "content": "上述代码的执行结果是?",
         "options": ["undefined","bower","cup","null"]
