@@ -64,15 +64,14 @@ JS-Intermediate
           3.构造函数调用(相当于类的用法,用来生成对象)
 
 三 this引用
-    js中的作用域
-    函数的对象化
-    函数与对象的结合
-    对象关键字:this
+      一.this引用的指向
+      二.this引用详解
+      三.函数的apply与call方法
 
 四 原型继承
-      原型:prototype
-      原型继承
-      原型拓展
+      一.原型:prototype
+      二.原型继承
+      三.原型拓展
 
 
 五 dom操作

@@ -1,6 +1,6 @@
 {
-    "name": "demo",
-    "desc": "dmeo.",
+    "name": "this引用",
+    "desc": "this引用是一种在Javascript的代码中随时都可以使用的只读变量.this引用引用的是一个对象.在不同的作用域内其指向是不同的,本节将细说一下this引用的使用技巧.",
     "order": 2,
     "type": "normal"
 }
