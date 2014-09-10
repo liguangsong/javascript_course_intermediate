@@ -6,7 +6,7 @@
     "code": "function Robot(name){\n    this.name= name;\n    this.say=function(){\n                console.log(this.name)\n             }\n}\nvar robot = new Robot('bower');\nfunction say(){\n    console.log(this.name)\n}\nsay.call(robot)",
     "question": {
         "content": "试根据上文中3和4的代码推断一下,上述代码的运行结果是?",
-        "options": ["bower","cup", "undefined","null"]
+        "options": ["bower","cup","undefined","null"]
     },
     "answer": {
         "value": "bower",

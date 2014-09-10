@@ -9,7 +9,7 @@
         "options": ["undefined","bower","cup","null"]
     },
     "answer": {
-        "value": "cup,
+        "value": "cup",
         "explain_file": true
     }
 }
