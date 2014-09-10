@@ -3,13 +3,13 @@
     "type": "topic",
     "order": 2,
     "desc_file": true,
-    "code": "demo",
+    "code": "var display = function(words) {\n	console.log( this.name  + \" said: \" + words[0] + \" \" + words[1] + \".\" );\n}\ndisplay.call({name:\"bower\"}, [\"I'm a\",\"robot\"])		// bower said: I'm robot.",
     "question": {
-        "content": "demo?",
-        "options": ["demo1","demo2","demo3","demo4"]
+        "content": "请问,下列用display函数的apply方法替换call方法,同时实现相同的输出结果的选项是?",
+        "options": ["display.apply({name:\"bower\"}, [[\"I'm a\",\"robot\"]])","display.apply({name:\"bower\"}, [\"I'm a\", \"robot\"])","display.apply({name:\"bower\"}, \"I'm a\", \"robot\")","display.apply(\"bower\", \"I'm a\",\"robot\")"]
     },
     "answer": {
-        "value": 7,
+        "value": "display.apply({name:\"bower\"}, [[\"I'm a\",\"robot\"]])",
         "explain_file": true
     }
 }

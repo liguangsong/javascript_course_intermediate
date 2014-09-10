@@ -1,1 +1,1 @@
-demo
+全局的函数say通过call方法将函数体内的this指向了robot对象,所以this.name的值是bower.

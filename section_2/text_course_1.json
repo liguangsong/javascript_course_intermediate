@@ -3,13 +3,13 @@
     "type": "topic",
     "order": 0,
     "desc_file": true,
-    "code": "demo",
+    "code": "function Robot(name){\n    this.name= name;\n    this.say=function(){\n                console.log(this.name)\n             }\n}\nvar robot = new Robot('bower');\nfunction say(){\n    console.log(this.name)\n}\nsay.call(robot)",
     "question": {
-        "content": "demo?",
-        "options": ["demo1","demo2", "demo3","demo4"]
+        "content": "试根据上文中3和4的代码推断一下,上述代码的运行结果是?",
+        "options": ["bower","cup", "undefined","null"]
     },
     "answer": {
-        "value": "dmeo3",
+        "value": "bower",
         "explain_file": true
     }
 }

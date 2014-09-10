@@ -50,3 +50,4 @@
     fn()					// Hi, I'm bower.
     //执行函数fn(相当于调用全局对象的fn方法),执行时this引用了全局对象.所以this.name的值是"bower".
 
+那么

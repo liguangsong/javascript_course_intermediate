@@ -42,3 +42,5 @@
     say.call(robot_2)     //  'bower'
 
 由于apply和call的用法十分相似,在本节后续内容进行详细介绍.
+
+那么

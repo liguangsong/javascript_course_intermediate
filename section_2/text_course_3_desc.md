@@ -27,7 +27,11 @@
     robot_1.say.call(robot_2)				// bower
     //通过call调用robot_1.say方法.方法内的this引用引用了robot_2
 
-对函数调用apply或call方法,就能够调用该函数.不考虑函数内的this引用的话,这和类似于 say() 这样的普通调用方式是一样的.两者的区别仅在于被调用的函数(方法)内的this引用,this引用的是作为apply/call的第一个参数被传递的对象.而apply与call之间的不同之处在于两者对其他参数的传递方式.对于apply来说,剩余的参数将通过数组来传递,而call是直接按原样传递.我们通过下面的例子来了解这一差异.
+对函数调用apply或call方法,就能够调用该函数.不考虑函数内的this引用的话,这和类似于 say() 这样的普通调用方式是一样的.
+
+apply和call两者的区别仅在于被调用的函数(方法)内的this引用,this引用的是作为apply/call的第一个参数被传递的对象.而apply与call之间的不同之处在于两者对其他参数的传递方式.
+
+对于apply来说,剩余的参数将通过数组来传递,而call是直接按原样传递.我们通过下面的例子来了解这一差异.
 
     function say(sex,age){console.log("My name is " + this.name + ",I'm a " + age + "years old " + sex + ".")}
     
