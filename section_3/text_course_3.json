@@ -1,0 +1,15 @@
+{
+    "title": "原型拓展",
+    "type": "topic",
+    "order": 2,
+    "desc_file": true,
+    "code": "demo",
+    "question": {
+        "content": "上述代码的执行结果是?",
+        "options": ["display.apply({name:\"bower\"}, [[\"I'm a\",\"robot\"]])","display.apply({name:\"bower\"}, [\"I'm a\", \"robot\"])","display.apply({name:\"bower\"}, \"I'm a\", \"robot\")","display.apply(\"bower\", \"I'm a\",\"robot\")"]
+    },
+    "answer": {
+        "value": "display.apply({name:\"bower\"}, [[\"I'm a\",\"robot\"]])",
+        "explain_file": true
+    }
+}

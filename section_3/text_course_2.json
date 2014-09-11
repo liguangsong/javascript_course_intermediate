@@ -1,0 +1,15 @@
+{
+    "title": "原型继承",
+    "type": "topic",
+    "order": 1,
+    "desc_file": true,
+    "code": "demo",
+    "question": {
+        "content": "上述代码的执行结果是?",
+        "options": ["undefined","bower","cup","null"]
+    },
+    "answer": {
+        "value": "cup",
+        "explain_file": true
+    }
+}

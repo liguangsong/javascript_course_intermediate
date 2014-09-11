@@ -1,0 +1,28 @@
+{
+    "name": "原型拓展",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "demo.",
+    "desc_file": true,
+    "step_desc_file": true,
+    "tips_file": true,
+    "answer_file": true,
+
+    "project_dir": "/javascript_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "challenge_3_2.js",
+            "path": "/javascript_template"
+        }
+    ],
+    "runner": {
+        "type":"terminal",
+        "src":"browser",
+        "name": "challenge.html",
+        "path": "/javascript_template",
+        "run_files": ["../javascript_template/challenge_3_2", "../specs/section_3/challenge_3_2"]
+    },
+    "order": 1
+}

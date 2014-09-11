@@ -1,0 +1,15 @@
+{
+    "title": "原型:prototype",
+    "type": "topic",
+    "order": 0,
+    "desc_file": true,
+    "code": "demo",
+    "question": {
+        "content": "上述代码的执行结果是?",
+        "options": ["bower","cup","undefined","null"]
+    },
+    "answer": {
+        "value": "bower",
+        "explain_file": true
+    }
+}
