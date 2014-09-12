@@ -1,44 +1,32 @@
-所有的函数(函数其实也是一种对象)都默认包含apply和call这两种方法,他们通过调用函数的this引用,可以指向任意特定的对象.可以认为apply和call能够强制函数内的this指定某一对象.
+大多数面向对象语言，都有new关键字。他们大多和一个构造函数一起使用，能够实例化一个类。JavaScript的new关键字是异曲同工的。
 
-下面是一个使用了apply方法和call方法的函数调用的例子.
-    
-    function say(){ console.log(this.name); }
-    var robot = {name:"cup"};
-    
-    say.apply(robot)			// cup
-    //通过apply调用函数say. 函数内的this引用引用了对象robot.
-    
-    say.call(robot)			// cup
-    //通过call调用函数say. 函数内的this引用引用了对象robot.
-    
-下面是一个使用了apply方法和call方法的对方法调用的例子.
-    
-    var robot_1 ={
-                    name:"cup",
-                    say:function(){
-                            console.log(this.name)
-                            }
-                  };
-    var robot_2 ={ name:"bower" };
-    
-    robot_1.say.apply(robot_2)			// bower
-    //通过apply调用robot_1.say方法.方法内的this引用引用了robot_2
-    
-    robot_1.say.call(robot_2)				// bower
-    //通过call调用robot_1.say方法.方法内的this引用引用了robot_2
+当我们，执行
 
-对函数调用apply或call方法,就能够调用该函数.不考虑函数内的this引用的话,这和类似于 say() 这样的普通调用方式是一样的.
+    new Robot("bower")
 
-apply和call两者的区别仅在于被调用的函数(方法)内的this引用,this引用的是作为apply/call的第一个参数被传递的对象.而apply与call之间的不同之处在于两者对其他参数的传递方式.
+实际上是得到了一个从Robot.prototype继承而来的一个对象。如果要理解原型继承中new的意义，还是这样理解最好。
 
-对于apply来说,剩余的参数将通过数组来传递,而call是直接按原样传递.我们通过下面的例子来了解这一差异.
+如果我们要描述new的工作流程，如下：
 
-    function say(sex,age){console.log("My name is " + this.name + ",I'm a " + age + "years old " + sex + ".")}
-    
-    say.apply({name:"cup"}, [12, "boy"])			// My name is cup,I'm a boyyears old 12.
-    // this.name = "cup", age = 12, sex = "boy"  作为第二个参数的数组中的元素都是函数say的参数.
-    
-    say.call({name:"cup"}, 12, "boy")				// My name is cup,I'm a boyyears old 12.
-    // this.name = "cup", age = 12, sex = "boy"  从第二个参数起的参数都是函数say的参数.
+1.分配一个新的空对象.
 
-在实际的编程过程中,,我们常常会为了函数回调而使用apply或call调用.详细内容请参见后续的Javascript高级课程.
+2.设置新对象的相关属性、方法，例如继承Robot.prototype上的各式方法、属性。注意，这里执行的并不是拷贝，而是类似于引用的方法,我们叫它代理(比如Robot.prototype对象的属性发生变化时,由Robot生成的实例对象直接继承的相应属性也会变化)。
+
+3.将这个新对象作为构造函数的执行上下文（其this引用指向这个新的对象），并执行构造函数.
+
+4.返回这个对象到执行new Robot("bower")的位置,赋值给前面的变量名.
+
+    var Robot = function(name) {this.name=name;this.say=function(){this.name}};	//声明一个构造函数
+    Robot.prototype = {age:12,sex:"boy"}	//设置构造函数Robot的原型对象(属性值可以为函数)
+    var robot = new Robot("bower")		//实例化一个对象
+
+当执行new Robot("bower")时
+
+首先,其中Robot.prototype这个对象的值{age:12,sex:"boy"}会被新的空对象继承,所以后面robot.age的值是12,robot.sex的值是"boy".
+
+然后,执行构造函数,运行时执行的方法可以理解为Robot.apply(robot,["bower"])的方式.此时会去设置新对象的属性name="bower";say=function(){this.name}.所以后面robot.name的值是"bower".执行robot.say()会输出"bower".
+
+其实,最后才把新的对象的值赋给变量robot.
+
+但其中age和sex属性是继承属性,name和say是自有属性(这两个概念下一页将会介绍).
+

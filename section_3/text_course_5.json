@@ -1,7 +1,7 @@
 {
-    "title": "new关键字",
+    "title": "原型链",
     "type": "topic",
-    "order": 2,
+    "order": 4,
     "desc_file": true,
     "code": "demo",
     "question": {
