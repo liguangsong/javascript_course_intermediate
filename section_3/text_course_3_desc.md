@@ -16,8 +16,13 @@
 
 4.返回这个对象到执行new Robot("bower")的位置,赋值给前面的变量名.
 
-    var Robot = function(name) {this.name=name;this.say=function(){this.name}};	//声明一个构造函数
-    Robot.prototype = {age:12,sex:"boy"}	//设置构造函数Robot的原型对象(属性值可以为函数)
+    var Robot = function(name) {        //声明一个构造函数
+                    this.name = name;
+                    this.say = function(){
+                                console.log(this.name)
+                             }
+                    };
+    Robot.prototype = { age: 12, sex: "boy" }	//设置构造函数Robot的原型对象(属性值可以为函数)
     var robot = new Robot("bower")		//实例化一个对象
 
 当执行new Robot("bower")时

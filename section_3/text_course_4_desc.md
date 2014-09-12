@@ -6,8 +6,13 @@ Javascript对象(如robot)拥有自有属性(如通过构造函数this.name=name
 
 也就是说，只有在查询时原型链才会起作用。赋值只针对自有属性.
 
-    var Robot = function(name) {this.name=name;this.say=function(){this.name}};
-    var info = {age:12,sex:"boy"};
+    var Robot = function(name) {        //声明一个构造函数
+                    this.name = name;
+                    this.say = function(){
+                                console.log(this.name)
+                             }
+                    };
+    var info = { age: 12, sex: "boy" };
     Robot.prototype = info;
 
     var robot = new Robot("bower");
