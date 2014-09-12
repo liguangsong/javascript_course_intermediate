@@ -1,6 +1,6 @@
 Javascript基于 ‘__proto__’ 的原型链
 
-link
+![原型链](http://course-image.qiniudn.com/js_intermediate_proto_link_map.jpg)
 
 图片说明:
 
