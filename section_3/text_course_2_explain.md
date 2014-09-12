@@ -1,1 +1,1 @@
-demo
+robot.__proto__ 会去查询robot的原型对象,而robot的原型对象是继承自Robot.prototype,所以结果应该是Robot.prototype的值.
