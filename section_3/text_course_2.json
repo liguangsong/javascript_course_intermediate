@@ -3,7 +3,7 @@
     "type": "topic",
     "order": 1,
     "desc_file": true,
-    "code": "var Robot = function(name) { this.name = name; };\nRobot.prototype = { age: 12, sex: \"boy\" };\nvar robot = new Robot(\"cup\");\nrobot.__proto__",
+    "code": "var Robot = function(name) { this.name = name; };\nRobot.prototype = { age: 12, sex: \"boy\" };\nvar robot = new Robot(\"cup\");\nrobot.\_\_proto\_\_",
     "question": {
         "content": "上述代码的执行结果是?",
         "options": ["{ age: 12, sex: \"boy\" }","{ age: 13, sex: \"boy\" }","{ age: 13, sex: \"girl\" }","{ age: 12, sex: \"girl\" }"]
