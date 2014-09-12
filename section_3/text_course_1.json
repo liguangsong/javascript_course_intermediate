@@ -1,15 +1,6 @@
 {
     "title": "面向对象",
-    "type": "topic",
+    "type": "text",
     "order": 0,
-    "desc_file": true,
-    "code": "demo",
-    "question": {
-        "content": "上述代码的执行结果是?",
-        "options": ["bower","cup","undefined","null"]
-    },
-    "answer": {
-        "value": "bower",
-        "explain_file": true
-    }
+    "desc_file": true
 }
