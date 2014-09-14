@@ -3,7 +3,7 @@
     "type": "normal",
     "point": 200,
 
-    "simple_desc": "demo.",
+    "simple_desc": "在Javascript中,体现原型继承的方式主要有两种:1,属性读取.2,属性写入.",
     "desc_file": true,
     "step_desc_file": true,
     "tips_file": true,

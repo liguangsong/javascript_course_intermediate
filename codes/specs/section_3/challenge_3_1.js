@@ -9,6 +9,6 @@ describe('section_3', function () {
         expect(logs[0]).toBe(12);
         expect(logs[1]).toBe(13);
         expect(logs[2]).toBe(13);
-        
+
     });
 });
