@@ -1,1 +1,1 @@
-demo
+在SuperRobot中,将say的原型对象指定成data.

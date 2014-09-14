@@ -3,7 +3,7 @@
     "type": "normal",
     "point": 200,
 
-    "simple_desc": "熟练的使用原型链的机制来构造对象,能够使我们的代码更加灵活高效.属性的删除也是一种十分有用的方法.",
+    "simple_desc": "了解了原型继承之后,我们可以利用原型链的机制来构造我们需要的函数或对象.",
     "desc_file": true,
     "step_desc_file": true,
     "tips_file": true,
