@@ -3,13 +3,13 @@
     "type": "topic",
     "order": 3,
     "desc_file": true,
-    "code": "demo",
+    "code": "function Robot(name){this.name=name};\nvar robot =  new Robot(\"bower\");\nconsole.log(robot.name);\nconsole.log(robot.age);\nRobot.prototype.age = 12;\nrobot.name = \"cup\";\nconsole.log(robot.name);\nconsole.log(robot.age);",
     "question": {
         "content": "上述代码的执行结果是?",
-        "options": ["display.apply({name:\"bower\"}, [[\"I'm a\",\"robot\"]])","display.apply({name:\"bower\"}, [\"I'm a\", \"robot\"])","display.apply({name:\"bower\"}, \"I'm a\", \"robot\")","display.apply(\"bower\", \"I'm a\",\"robot\")"]
+        "options": ["bower, undefined, cup, undefined","bower, 12, cup, 12","bower, undefined, cup, 12","bower, 12, cup, undefined"]
     },
     "answer": {
-        "value": "display.apply({name:\"bower\"}, [[\"I'm a\",\"robot\"]])",
+        "value": "bower, undefined, cup, 12",
         "explain_file": true
     }
 }
