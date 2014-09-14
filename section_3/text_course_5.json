@@ -3,13 +3,13 @@
     "type": "topic",
     "order": 4,
     "desc_file": true,
-    "code": "demo",
+    "code": "function Robot(name){this.name = name;};	//自定义构造函数\nRobot.prototype = {age:12, sex:\"boy\"};\nvar robot = new Robot(\"bower\");\n//通过__proto__寻找原型链的关系:\n//假设\n//robot的原型对象是a.\n//Robot的原型对象是b.\n//Robot.prototype和Function.ptototype的原型对象都是c.\n//Object.prototype的原型对象是d.",
     "question": {
-        "content": "上述代码的执行结果是?",
-        "options": ["display.apply({name:\"bower\"}, [[\"I'm a\",\"robot\"]])","display.apply({name:\"bower\"}, [\"I'm a\", \"robot\"])","display.apply({name:\"bower\"}, \"I'm a\", \"robot\")","display.apply(\"bower\", \"I'm a\",\"robot\")"]
+        "content": "则,a b c d 分别是?",
+        "options": ["Robot.prototype,Robot.prototype,Object.prototype,null","Robot.prototype,Robot.prototype,Object.prototype,null","Robot.prototype,Function.prototype,Object.prototype,null","Robot.prototype,Objet.prototype,Object.prototype,null"]
     },
     "answer": {
-        "value": "display.apply({name:\"bower\"}, [[\"I'm a\",\"robot\"]])",
+        "value": "Robot.prototype,Function.prototype,Object.prototype,null",
         "explain_file": true
     }
 }
