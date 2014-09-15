@@ -1,0 +1,28 @@
+{
+    "name": "Ajax",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "demo.",
+    "desc_file": true,
+    "step_desc_file": true,
+    "tips_file": true,
+    "answer_file": true,
+
+    "project_dir": "/javascript_template",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "challenge_4_1.js",
+            "path": "/javascript_template"
+        }
+    ],
+    "runner": {
+        "type":"terminal",
+        "src":"browser",
+        "name": "challenge.html",
+        "path": "/javascript_template",
+        "run_files": ["../javascript_template/challenge_4_1", "../specs/section_4/challenge_4_1"]
+    },
+    "order": 0
+}

@@ -1,0 +1,15 @@
+{
+    "title": "Ajax 5",
+    "type": "topic",
+    "order": 4,
+    "desc_file": true,
+    "code": "demo",
+    "question": {
+        "content": "则,a b c d 分别是?",
+        "options": ["Robot.prototype,Robot.prototype,Object.prototype,null","Function.prototype,Robot.prototype,Object.prototype,null","Robot.prototype,Function.prototype,Object.prototype,null","Robot.prototype,Object.prototype,Object.prototype,null"]
+    },
+    "answer": {
+        "value": "Robot.prototype,Function.prototype,Object.prototype,null",
+        "explain_file": true
+    }
+}

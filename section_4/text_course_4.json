@@ -1,0 +1,15 @@
+{
+    "title": "Ajax 4",
+    "type": "topic",
+    "order": 3,
+    "desc_file": true,
+    "code": "demo",
+    "question": {
+        "content": "上述代码的执行结果是?",
+        "options": ["bower, undefined, cup, undefined","bower, 12, cup, 12","bower, undefined, cup, 12","bower, 12, cup, undefined"]
+    },
+    "answer": {
+        "value": "bower, undefined, cup, 12",
+        "explain_file": true
+    }
+}
