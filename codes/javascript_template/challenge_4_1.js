@@ -25,5 +25,5 @@ function show(data){
 //当我们调用get_inputs函数时，我们将show函数作为一个参数传递给它     
 //因此show将会在get_inputs函数内被回调（或者执行）     
 get_inputs({name:"bower",speciality:"Robot"}, show);
-//name:bower
-//speciality:Robot
+//name: bower
+//speciality: Robot
