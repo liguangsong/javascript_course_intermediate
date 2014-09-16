@@ -12,7 +12,6 @@
         }
     }
     function get_inputs (inputs, callback){
-        info.push(inputs);
         callback(inputs);
     }
     get_inputs({name:"bower",speciality:"Robot"}, show);
