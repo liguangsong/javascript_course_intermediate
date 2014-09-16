@@ -26,3 +26,4 @@
     var function_2=function(){console.log(this.word_2)};
     function_1(function_2);
 
+那么

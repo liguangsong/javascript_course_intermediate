@@ -1,15 +1,6 @@
 {
     "title": "使用场合",
-    "type": "topic",
+    "type": "text",
     "order": 2,
-    "desc_file": true,
-    "code": "demo",
-    "question": {
-        "content": "上述代码的执行结果是?",
-        "options": ["{ age: 12, sex: \"boy\" }","{ age: 13, sex: \"boy\" }","{ age: 13, sex: \"girl\" }","{ age: 12, sex: \"girl\" }"]
-    },
-    "answer": {
-        "value": "{ age: 13, sex: \"boy\" }",
-        "explain_file": true
-    }
+    "desc_file": true
 }

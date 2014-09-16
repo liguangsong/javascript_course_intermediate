@@ -3,13 +3,13 @@
     "type": "topic",
     "order": 3,
     "desc_file": true,
-    "code": "demo",
+    "code": "var word_2 = \"do another thing.\";\nvar function_1=function(callback){\n    this.word_1 = \"do something.\";\n    console.log(this.word_1);\n    (callback && typeof(callback) === \"function\") && callback();\n}\nvar function_2=function(){console.log(this.word_2)};\nfunction_1(function_2);",
     "question": {
         "content": "上述代码的执行结果是?",
-        "options": ["bower, undefined, cup, undefined","bower, 12, cup, 12","bower, undefined, cup, 12","bower, 12, cup, undefined"]
+        "options": ["do something.  do another thing.","do something.  undefined","do something.  do something thing.","do something.  null"]
     },
     "answer": {
-        "value": "bower, undefined, cup, 12",
+        "value": "do something.  do another thing.",
         "explain_file": true
     }
 }

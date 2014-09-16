@@ -3,13 +3,13 @@
     "type": "topic",
     "order": 1,
     "desc_file": true,
-    "code": "demo",
+    "code": "var function_1=function(callback){\n    var num = 0;\n    console.log(num++);\n    (callback && typeof(callback) === \"function\") && callback(num);\n}\nfunction_1(function(num){console.log(num)});",
     "question": {
         "content": "上述代码的执行结果是?",
-        "options": ["{ age: 12, sex: \"boy\" }","{ age: 13, sex: \"boy\" }","{ age: 13, sex: \"girl\" }","{ age: 12, sex: \"girl\" }"]
+        "options": ["0  1","1  2","0  0","0  2"]
     },
     "answer": {
-        "value": "{ age: 12, sex: \"boy\" }",
+        "value": "0  1",
         "explain_file": true
     }
 }
