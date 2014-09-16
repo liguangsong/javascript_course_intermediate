@@ -4,6 +4,7 @@ describe('section_4', function () {
         get_inputs(flag,function(data){++data;})
         expect(logs[0]).toBe("name: bower");
         expect(logs[1]).toBe("speciality: Robot");
+        expect(get_inputs(flag,function(data){++data;})).toBe(undefined);
         expect(flag).toBe(2);
         expect(info[0].name).toBe("bower");
         expect(info[0].speciality).toBe("Robot");
