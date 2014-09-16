@@ -3,7 +3,7 @@
     "type": "normal",
     "point": 200,
 
-    "simple_desc": "demo.",
+    "simple_desc": "回调函数其实就和普通函数传参一样简单.但是可能和之前的编程思维有些改变,但了解了其中实际原理,就能更好地进一步了解和掌握Javascript这门语言了.",
     "desc_file": true,
     "step_desc_file": true,
     "tips_file": true,
