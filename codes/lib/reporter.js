@@ -89,12 +89,12 @@ getJasmineRequireObj().CustomReporter = function () {
 
         onSpecDone: function (specResult) {
             if (!parent.report_me_spec_result) {
-                console.log(specResult, 'on spec done');
+                console.debug(specResult, 'on spec done');
             }
         },
         onComplete: function (result) {
             if (!parent.report_me_spec_result) {
-                return console.log(result, 'on complete');
+                return console.debug(result, 'on complete');
             }
             parent.report_me_spec_result(result.isPassed, result.failedSpecs);
         }

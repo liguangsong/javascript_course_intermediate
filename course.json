@@ -11,7 +11,7 @@
         "order": 1,
         "ico": "/images/JS.PNG",
         "title_ico": "/images/Javascript.png",
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     "relevance":{
         "type":"path",
