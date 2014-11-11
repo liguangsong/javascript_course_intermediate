@@ -4,7 +4,7 @@
 
 1.1访问自带构造函数Array的原型
 
-    Array.prototype		// [ ]
+    Array.prototype		//访问结果为 [ ]
 
 1.2访问自定义构造函数Robot的原型
 

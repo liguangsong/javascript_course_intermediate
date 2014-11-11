@@ -12,7 +12,7 @@
 所以不会造成由于变量未定义而出错的结果.
 例如:
 
-    console.log(num1);  //Error: num1 is not defined
+    console.log(num1);  //打印：Error: num1 is not defined
     console.log(num2);  //当代码运行出错时,将停止运行后续代码.所以第二行没有被执行到.
 
 代码中用到了未定义的变量,所以会在console控制台内报错.
