@@ -5,7 +5,7 @@
     function fn(){
       console.log(this)
     }
-    fn()                 //window{...}
+    fn()                 //打印结果为window{...}
 
 2.方法调用模式的时候，this指向方法所在的对象
 
@@ -15,7 +15,7 @@
                        console.log(this.name)
                     }
                 };
-    robot.say()         //'cup'
+    robot.say()         //打印结果为'cup'
 
 3.构造函数模式的时候，this指向新生成的实例
 
@@ -26,9 +26,9 @@
                  }
     }
     var robot_1 = new Robot('bower');
-    robot_1.say()        //  'bower'
+    robot_1.say()        //  打印结果为'bower'
     var robot_2 = new Robot('cup');
-    robot_2.say()        //  'cup'
+    robot_2.say()        //  打印结果为'cup'
 
 4.apply/call调用模式的时候，this指向apply/call方法中的第一个参数
 
@@ -38,8 +38,8 @@
     function say(){
       console.log(this.name)
     }
-    say.call(robot_1)     //  'cup'
-    say.call(robot_2)     //  'bower'
+    say.call(robot_1)     //  打印结果为'cup'
+    say.call(robot_2)     //  打印结果为'bower'
 
 由于apply和call的用法十分相似,在本节后续内容进行详细介绍.
 

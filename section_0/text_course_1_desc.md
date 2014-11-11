@@ -23,7 +23,7 @@ num1 = 5  是在给变量num1赋值为5.
 即:
 
     var num1;
-    console.log(num1);   //undefined
+    console.log(num1);   //打印结果为:undefined
 
 多个变量可以通过一个 var 关键字定义,也可以分别定义.并且定义的同时可以赋值
 如:

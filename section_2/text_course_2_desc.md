@@ -14,8 +14,8 @@
         name : "cup",
         say : function() { console.log( "Hi, I'm " + this.name + "."); }
     }
-    robot.say()			// Hi, I'm cup.
-    robot["say"]()			// Hi, I'm cup.
+    robot.say()			// 打印结果为 Hi, I'm cup.
+    robot["say"]()			// 打印结果为 Hi, I'm cup.
     //对象robot是被调用的对象,say是方法.
 
 上面的例子:首先是将对象赋给了变量robot.这个对象有两个属性.属性name的值为"cup",属性say的值是一个函数.将该函数称作方法say.(可以通过点运算符或中括号运算符对robot的say方法进行调用.)被调用的方法say内的关键字this引用了被调用的对象robot.
@@ -31,7 +31,7 @@
     var fn = robot.say;
     // 将robot.say引用的函数赋值给全局变量 fn.
 
-    fn()						// Hi, I'm .
+    fn()						// 打印结果为 Hi, I'm .
     // 执行函数(全局的方法),this引用了全局对象,由于全局对象没有name属性,所以没有取到值.
 
 我们确认一下this引用了全局对象
@@ -47,7 +47,7 @@
     var name = "bower",
     //相当于给全局对象定义了一个属性name,赋值为"bower"
 
-    fn()					// Hi, I'm bower.
+    fn()					// 打印结果为 Hi, I'm bower.
     //执行函数fn(相当于调用全局对象的fn方法),执行时this引用了全局对象.所以this.name的值是"bower".
 
 那么
