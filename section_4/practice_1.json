@@ -22,7 +22,7 @@
         "src":"browser",
         "name": "challenge.html",
         "path": "/javascript_template",
-        "run_files": ["../javascript_template/challenge_4_1", "../specs/section_4/challenge_4_1"]
+        "run_files": ["../javascript_template/challenge_4_1.js", "../specs/section_4/challenge_4_1.js"]
     },
     "order": 0
 }
