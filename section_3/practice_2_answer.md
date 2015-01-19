@@ -4,7 +4,7 @@
         return say;
     }
 
-    var data = { name:"atom", age: 5, };
+    var data = { name:"atom", age: 5};
     var super_robot = SuperRobot(data);
 
     console.log(super_robot());			//Hello World!

@@ -1,10 +1,10 @@
 function SuperRobot(data) {
-    var say = function() { return "Hello World!"; }
+    var say = function() { return "Hello World!"; };
 
     return say;
 }
 
-var data = { name:"atom", age: 5, };
+var data = { name:"atom", age: 5};
 var super_robot = SuperRobot(data);
 
 console.log(super_robot());			//Hello World!
