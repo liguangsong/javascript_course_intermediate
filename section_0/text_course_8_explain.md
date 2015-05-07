@@ -1,1 +1,0 @@
-变量result在compare函数内部相当于一个全局变量,可以被函数内嵌套的函数result访问,当该变量的值被result内部的语句修改以后,其修改的结果将会影响compare函数作用域范围内result变量的值,所以result函数内部对result变量的修改结果,在result函数外部仍然被记录了.
