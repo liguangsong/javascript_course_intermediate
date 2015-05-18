@@ -1,27 +1,17 @@
-返回值 return 用来在函数体内向调用本函数的位置返回某些数据.
-例如:
+所谓函数的嵌套,顾名思义,就是在函数内部还可以声明和调用函数.例如
 
-    //无返回值
-    function sum(a,b){
-        var result = a+b;
+    function f1(){		//声明函数f1
+        console.log("this is f1");
+        function f2(){	//在函数f1内部声明函数f2
+            console.log("this is f2");
+        }
+        f2();			//在函数f1内部调用函数f2
     }
-    var sum = sum(1,2);  //sum的值为undefined
 
-当函数没有返回值的时候,会有一个默认的返回值undefined,所以上述代码执行时
+当我们调用f1的时候，实际输出:
 
-    var sum = sum();
+    this is f1
+    this is f2
 
-等价于
+说明在调用函数f1时,其内部代码被运行,进行了函数f2的定义和调用.
 
-    var sum = undefined;
-
-有返回值
-
-    //有返回值
-    function sum(a,b){
-        var result = a+b;
-        return result;
-    }
-    var sum = sum(1, 2);  //sum的值为3
-
-调用sum(1,2)时,该函数实际的结果为被返回的result的值,即3.

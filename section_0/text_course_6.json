@@ -1,15 +1,16 @@
 {
-    "title": "返回值",
+    "title": "函数的嵌套",
     "type": "topic",
     "order": 5,
     "desc_file": true,
-    "code": "var num1 = 3;\nvar num2 = 5;\nfunction compare(a, b){\n    return a>b ? \"bigger\" : \"not less\";\n}\nresult = compare(num1,num2);\nconsole.log( num1 + \" is \" + result + \" than \" + num2 );",
+    "code": "function compare(a, b){\n    function result(left, right){\n        var result = left>right ? \"bigger\" : \"not less\";\n        return result;\n }\n var result = result(a, b)\n    var string = a + \" is \" + result + \" than \" + b;\n    return string;\n}\nconsole.log( compare(5,3) );",
     "question": {
         "content": "请问,上面代码的输出结果是?",
         "options": ["5 is not less than 3","3 is bigger than 5","5 is bigger than 3","3 is not less than 5"]
     },
     "answer": {
-        "value": "3 is not less than 5",
+        "value": "5 is bigger than 3",
         "explain_file": true
     }
 }
+
