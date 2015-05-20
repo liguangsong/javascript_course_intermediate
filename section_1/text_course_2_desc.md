@@ -50,4 +50,4 @@ Object()是JavaScript内置对象Object的构造函数。
                         x           : 2,
                         say_hello   : function(){ console.log( "Hello!" ); }
                  };
-     robot["say_hello"]();
+     robot["say_hello"](); //等价于 robot.say_hello();
