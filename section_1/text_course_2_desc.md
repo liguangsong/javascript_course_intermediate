@@ -2,13 +2,13 @@
 
 1.方法调用(调用对象的函数属性)
 
-对象的函数属性有一种区别于一般函数的名称，叫做 **方法**。相应的，调用对象的函数属性时就叫做方法的调用.
+对象的函数属性有一种区别于一般函数的名称，叫做 **方法**。相应的，调用对象的函数属性时就叫做方法的调用。
 
-在字面量表达式的内容里我们定义过一个属性值含有函数的对象,那我们定义在对象内部的函数(即方法)如何调用呢?
+在字面量表达式的内容里我们定义过一个属性值含有函数的对象，那我们定义在对象内部的函数(即方法)如何调用呢？
 		
     //通过字面量定义的对象
     var robot = { 
-                    x           : 2, 
+                            x   : 2, 
                     say_hello   : function(){ console.log( "Hello!" ); }
                 };
     robot.say_hello();		    //调用对象的方法
@@ -20,7 +20,7 @@
 通过new表达式生成的对象
 
     var robot = new Object();
-    robot.say_hello = function(){ console.log( "Hello!" ) };
+    robot.say_hello = function(){ console.log( "Hello!" ); };
     robot.say_hello();		    //调用对象的方法
 
 输出:
@@ -47,7 +47,9 @@ Object()是JavaScript内置对象Object的构造函数。
 对象的函数属性依然是函数，所以除了点+函数名的方式访问，对象也可以通过[]的方式访问。比如
 
      var robot = {
-                        x           : 2,
+                                x   : 2,
                         say_hello   : function(){ console.log( "Hello!" ); }
                  };
      robot["say_hello"](); //等价于 robot.say_hello();
+     
+     
