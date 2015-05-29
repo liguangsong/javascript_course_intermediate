@@ -22,16 +22,16 @@
                                 console.log(this.name)
                              }
                     };
-    Robot.prototype = { age: 12, sex: "boy" }	//设置构造函数Robot的原型对象(属性值可以为函数)
+    Robot.prototype = { age: 12, gender: "boy" }	//设置构造函数Robot的原型对象(属性值可以为函数)
     var robot = new Robot("bower")		//实例化一个对象
 
 当执行new Robot("bower")时
 
-首先,其中Robot.prototype这个对象的值{age:12,sex:"boy"}会被新的空对象继承,所以后面robot.age的值是12,robot.sex的值是"boy".
+首先,其中Robot.prototype这个对象的值{age:12,gender:"boy"}会被新的空对象继承,所以后面robot.age的值是12,robot.gender的值是"boy".
 
 然后,执行构造函数,运行时执行的方法可以理解为Robot.apply(robot,["bower"])的方式.此时会去设置新对象的属性name="bower";say=function(){this.name}.所以后面robot.name的值是"bower".执行robot.say()会输出"bower".
 
 其实,最后才把新的对象的值赋给变量robot.
 
-但其中age和sex属性是继承属性,name和say是自有属性(这两个概念下一页将会介绍).
+但其中age和gender属性是继承属性,name和say是自有属性(这两个概念下一页将会介绍).
 

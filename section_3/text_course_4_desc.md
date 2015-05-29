@@ -12,19 +12,19 @@ Javascript对象(如robot)拥有自有属性(如通过构造函数this.name=name
                                 console.log(this.name)
                              }
                     };
-    var info = { age: 12, sex: "boy" };
+    var info = { age: 12, gender: "boy" };
     Robot.prototype = info;
 
     var robot = new Robot("bower");
 
-    console.log(robot);			//打印结果为Robot {name: "bower", say: function, age: 12, sex: "boy"}
+    console.log(robot);			//打印结果为Robot {name: "bower", say: function, age: 12, gender: "boy"}
     console.log('age' in robot);	//打印结果为true
     console.log(robot.hasOwnProperty('age'));	//打印结果为false
 
     robot.name = "cup";
     robot.age = 13;
 
-    console.log(robot);			//打印结果为Robot {name: "bower", say: function, age: 12, sex: "boy"}
+    console.log(robot);			//打印结果为Robot {name: "bower", say: function, age: 12, gender: "boy"}
     console.log('age' in robot);	//打印结果为true
     console.log(robot.hasOwnProperty('age'));	//打印结果为true
 
